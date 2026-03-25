@@ -12,16 +12,15 @@ public class SistemaPrincipal {
 //		// TODO Auto-generated method stub
 
 //		Passageiro passageiro1 = new Passageiro();
-		Carro prisma = new Carro();
+		Carro prisma = new Carro("preto", "Sedan");
 		
 //		passageiro1.nome = "Ana Silva";
-		prisma.cor = "preto";
-		prisma.carroceria = "Sedan";
+
 //		passageiro1.saldo = 50.0;
 		
 		
 //		Passageiro passageiro2 = new Passageiro();
-		Carro byd = new Carro();
+		Carro byd = new Carro("branco", "SUV");
 		
 		
 //		passageiro2.nome = "Carlos Souz";

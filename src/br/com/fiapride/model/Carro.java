@@ -5,6 +5,11 @@ public class Carro {
     public String cor;
     public String carroceria;
 
+    public Carro(String cor, String carroceria) {
+        this.cor = cor;
+        this.carroceria = carroceria;
+    }
+
     // Método 1
     public void alterarCor(String novaCor) {
         if (novaCor.equals("")) {
