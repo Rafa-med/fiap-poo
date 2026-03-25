@@ -10,6 +10,7 @@ public class Carro {
         this.carroceria = carroceria;
     }
 
+
     // Método 1
     public void alterarCor(String novaCor) {
         if (novaCor.equals("")) {
