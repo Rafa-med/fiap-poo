@@ -4,6 +4,10 @@ import br.com.fiapride.model.Passageiro;
 import br.com.fiapride.model.Carro;
 import br.com.fiapride.model.Viagem;
 
+// 👇 IMPORTS NOVOS (IMPORTANTÍSSIMO)
+import br.com.fiapride.model.CarroSUV;
+import br.com.fiapride.model.CarroSedan;
+
 public class SistemaPrincipal {
 
 	public static void main(String[] args){
@@ -13,19 +17,19 @@ public class SistemaPrincipal {
 		passageiro1.nome = "Ana Silva";
 		passageiro1.saldo = 50.0;
 
-		// Carro 1
-		Carro prisma = new Carro("preto", "Sedan");
+		// 👇 AGORA USA HERANÇA
+		Carro prisma = new CarroSedan("preto");
 
 		// Passageiro 2
 		Passageiro passageiro2 = new Passageiro();
 		passageiro2.nome = "Carlos Souza";
 		passageiro2.saldo = 12.50;
 
-		// Carro 2
-		Carro byd = new Carro("branco", "SUV");
+		// 👇 AGORA USA HERANÇA
+		Carro byd = new CarroSUV("branco");
 
 		// =============================
-		// 🔥 AQUI É O EXERCÍCIO NOVO
+		// 🔥 EXERCÍCIO
 		// =============================
 
 		Viagem viagem1 = new Viagem("Avenida Paulista", passageiro1, prisma);
